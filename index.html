@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <script>  
+      function waitAndshow() {  
+        var systemdate = new Date();  
+        document.getElementById("clock").innerHTML += systemdate.toLocaleTimeString();  
+        document.getElementById("clock").innerHTML += " -> ";  
+        var audio = new Audio('https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3');
+        audio.play();
+      }  
+      setInterval(waitAndshow, 1000);  
+    </script>  
+    <h3>Click anywhere on this page once!</h3>  
+    <h3>Then a beep will sound every 10 seconds to remind you to do your eye exercise!</h3>  
+    <span id="clock"></span>
+  </body>
+</html>
